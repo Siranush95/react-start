@@ -14,13 +14,11 @@ export default class App extends Component {
     }
 
     componentDidMount() {
-        const that = this;
+        
         this.interval = setInterval(() =>
-            this.setState({percentage: ++that.state.percentage}),
+            this.setState({percentage: ++this.state.percentage}),
         100);
-        // if (this.state.percentage === 100){
-        //     clearInterval(this.interval);
-        // }
+       
 
     }
 
